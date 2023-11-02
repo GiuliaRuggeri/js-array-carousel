@@ -33,6 +33,13 @@ document.getElementById("btnnext").addEventListener("click", function () {
         images[currentImage].classList.remove("block");
         currentImage++;
         images[currentImage].classList.add("block");
+        
+    }
+    else{
+        images[currentImage].classList.remove("block");
+        currentImage=0;
+        images[currentImage].classList.add("block");
+
     }
 
 });
@@ -45,6 +52,13 @@ document.getElementById("btnprevious").addEventListener("click", function(){
         currentImage--;
         images[currentImage].classList.add("block");
     }
+    else{
+        images[currentImage].classList.remove("block");
+        currentImage=images.length-1;
+        images[currentImage].classList.add("block");
+
+    }
+
 
    
 })
