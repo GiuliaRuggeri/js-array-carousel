@@ -1,3 +1,27 @@
+const imageList=[
+    "./img/04.webp",
+    "./img/01.webp",
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/05.webp",
+
+]
+
+let imageWrapper = document.getElementById("imgwrapper");
+ 
+for(i=0; i < imageList.length; i++){
+    let image=document.createElement("img");
+    image.src= imageList[i];
+    imageWrapper.append(image)
+    
+
+}
+
+
+
+
+
+// First image block
 let currentImage = 0;
 const images = document.querySelectorAll("#imgwrapper img");
 images[currentImage].classList.add("block");
